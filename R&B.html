@@ -29,27 +29,34 @@
 
 <div class="container">
 <h3>Playlist</h3>
-
-    <div class="imagebox">
+    <div class="imagebox1" onclick="box()">
         <a href=""><img class="img-fluid rounded foto" src="pics/Album2.png"></a>
         <div class="overlay">
             <div class="text"> Cozz - Zendaya Feat. J. Cole</div>
         </div>
     </div>
 
-    <div class="imagebox">
+    <div class="imagebox2">
         <a href=""><img class="img-fluid rounded foto" src="pics/Album2B2.png"></a>
         <div class="overlay">
             <div class="text"> Joyner Lucas - Winter Blues</div>
         </div>
     </div>
 
-    <div class="imagebox">
+    <div class="imagebox3">
         <a href=""><img class="img-fluid rounded foto" src="pics/Album3B2.png"></a>
         <div class="overlay">
             <div class="text"> EARTHGANG - Meditate ft. J.I.D.</div>
         </div>
     </div>
 </div>
+<script>
+    function box() {
+        var myWindow = window.open("", "_self");
+        myWindow.document.write("<iframe width="560" height="315" src="https://www.youtube.com/embed/FWT1J_vcYQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>");
+            }
+</script>
+
+
 </body>
 </html>
