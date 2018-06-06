@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="script" href="js/bootstrap.bundle.js">
-    <link rel="script" href="js/bootstrap.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>SpotiTube</title>
 </head>
 <body>
-<ul class="nav nav-pills nav-justified badge-dark">
-
-    <a class="nav-link disabled text-white" href="#">SpotiTube</a>
-    <a class="nav-link text-white" href="index.html">Home</a>
-    <a class="nav-link text-white" href="index2.html">Playlists</a>
-
-</ul>
+<nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+    <div class="container">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link disabled text-white" href="#">SpotiTube</a>
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="index2.html">Playlists</a>
+        </div>
+    </div>
+    <div class="nav-item dropdown show text-white" style="margin-right: 100px">
+        <button class="nav-link btn btn-secondary dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expandid="true" >
+            log in
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-dark" href="#">inloggen</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-dark" href="#">Aanmelden</a>
+        </div>
+    </div>
+</nav>
 
 <div class="jumbotron justify-center">
     <div class="container">
@@ -29,9 +42,41 @@
 
 <div class="container">
 <h3>Playlist</h3>
-    <li href=""></li>
-    <li href=""></li>
-    <li href=""></li>
+    <div>
+        <!--youtube popup Global song 1-->
+        <div style="display:none;" id="id7">
+            <iframe width="1000" height="700" src="https://www.youtube.com/embed/hjf-h6NMj7U" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <img onclick="document.getElementById('id7').style.display = 'block';this.style.display = 'none'" class="img-fluid rounded foto" src="pics/Album3C1.png">
+        <div class="overlay">
+            <div class="text"> Khalid - OTW ft. 6LACK, Ty Dolla $ign</div>
+        </div>
+    </div>
+    <div>
+        <!--youtube popup Global song 2-->
+        <div style="display:none;" id="id8">
+            <iframe width="1000" height="700" src="https://www.youtube.com/embed/yQs94jVi1DY?start=107" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <img onclick="document.getElementById('id8').style.display = 'block';this.style.display = 'none'" class="img-fluid rounded foto" src="pics/Album3C2.png">
+        <div class="overlay">
+            <div class="text"> ALI B - WAAR PRATEN WE OVER ft. LEXXXUS STIEKZ</div>
+        </div>
+    </div>
+    <div>
+        <!--youtube popup Global song 3-->
+        <div style="display:none;" id="id9">
+            <iframe width="1000" height="700" src="https://www.youtube.com/embed/pISvfen4ghg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <img onclick="document.getElementById('id9').style.display = 'block';this.style.display = 'none'" class="img-fluid rounded foto" src="pics/Album3C3.png">
+        <div class="overlay">
+            <div class="text"> Navi x Adje - 4AM</div>
+        </div>
+    </div>
 </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

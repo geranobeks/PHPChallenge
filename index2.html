@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="script" href="js/bootstrap.bundle.js">
-    <link rel="script" href="js/bootstrap.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>SpotiTube</title>
     <style>
         .imagebox {
@@ -51,13 +52,25 @@
     </style>
 </head>
 <body>
-<ul class="nav nav-pills nav-justified badge-dark">
-
-    <a class="nav-link disabled text-white" href="#">SpotiTube</a>
-    <a class="nav-link text-white" href="index.html">Home</a>
-    <a class="nav-link text-white" href="#">Playlists</a>
-
-</ul>
+<nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+    <div class="container">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link disabled text-white" href="#">SpotiTube</a>
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="index2.html">Playlists</a>
+        </div>
+    </div>
+    <div class="nav-item dropdown show text-white" style="margin-right: 100px">
+        <button class="nav-link btn btn-secondary dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expandid="true" >
+            log in
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-dark" href="#">inloggen</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-dark" href="#">Aanmelden</a>
+        </div>
+    </div>
+</nav>
 
 <div class="jumbotron justify-center">
  <div class="container">
@@ -72,9 +85,9 @@
 <h3>Playlist</h3>
     
   <div class="imagebox">
-    <a href="reggae.html"><img class="img-fluid rounded foto" src="pics/Album1.png"></a>
+    <a href="soul.html"><img class="img-fluid rounded foto" src="pics/Album1.png"></a>
     <div class="overlay">
-        <div class="text"> reggae</div>
+        <div class="text"> Soul</div>
     </div>
  </div>
 
@@ -103,5 +116,6 @@
 <footer class="container">
     <p>© SpotiTube 2017-2018</p>
 </footer>
-</body>
-</html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS --></body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script></html>
